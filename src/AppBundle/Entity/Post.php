@@ -90,9 +90,8 @@ class Post
 
     /**
      * Post constructor.
-     * @param $createdAt
      */
-    public function __construct($createdAt)
+    public function __construct()
     {
         $this->createdAt = new \DateTime();
     }

@@ -18,7 +18,9 @@ class PostType extends AbstractType
         $builder
             ->add('title', TextType::class)
             ->add('author', TextType::class)
-            ->add('content', CKEditorType::class)
+            ->add('content', CKEditorType::class, [
+                'config_name' => 'my_custom_config'
+            ])
             ->add('url')
             ->add('published')
             ->add('image', ImageType::class, [
